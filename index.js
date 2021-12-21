@@ -8,11 +8,7 @@ mongoose
 const app = express()
 
 app.use(express.json())
-app.use(cors())
 
-app.use("/api/auth", users)
-app.use("/api/casts", casts)
-app.use("/api/genres", genres)
 app.use("/api/films", films)
 
 const port = 5000
