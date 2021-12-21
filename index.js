@@ -1,15 +1,3 @@
-const express = require("express")
-const mongoose = require("mongoose")
-const cors = require("cors")
-require("dotenv").config()
-const Joi = require("joi")
-const JoiObjectId = require("joi-objectid")
-Joi.objectid = JoiObjectId(Joi)
-const users = require("./routes/users")
-const casts = require("./routes/casts")
-const genres = require("./routes/genres")
-const films = require("./routes/films")
-
 mongoose
   .connect(
     `mongodb+srv://user8465z:${process.env.MONGODB_PASSWORD}@cluster0.oxi8g.mongodb.net/filmsDB?retryWrites=true&w=majority`
