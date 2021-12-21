@@ -6,6 +6,7 @@ mongoose
   .catch(error => console.log("Error connecting to MongoDB", error))
 
 const app = express()
+console.log("hello")
 
 app.use(express.json())
 
